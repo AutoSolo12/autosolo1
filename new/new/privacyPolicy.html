@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TNET LLC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #e60000; /* Bright Red */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #cc0000;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .privacy-policy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-policy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .privacy-policy-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .privacy-policy-content:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #e60000; /* Bright Red */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e60000;
+            padding-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .section-content {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Stylish Buttons */
+        .btn {
+            background-color: #e60000; /* Bright Red */
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px; /* Fully rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase; /* Uppercase text for a clean look */
+            letter-spacing: 1px; /* Slight space between letters */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.05); /* Slight grow on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+        }
+
+        .btn:active {
+            transform: scale(0.98); /* Slight shrink on click */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow when clicked */
+        }
+
+        .footer {
+            background-color: #e60000; /* Bright Red */
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .footer p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .buttons {
+            margin-top: 2rem; /* Added margin-top to move buttons lower */
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            margin: 0 1rem;
+            background-color: #cc0000;
+            border-radius: 30px; /* Fully rounded corners */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 1px; /* Slight space between letters */
+        }
+
+        .buttons a:hover {
+            background-color: #e60000;
+            transform: scale(1.05); /* Slight grow on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+        }
+
+        .buttons a:active {
+            transform: scale(0.98); /* Slight shrink on click */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Lighter shadow when clicked */
+        }
+
+        /* Stylish Agree Button */
+        .agree-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            background-color: #e60000; /* Bright Red */
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 1px; /* Slight space between letters */
+            margin-top: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .agree-btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .agree-btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .translate-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .translate-label {
+            font-size: 16px;
+            color: white;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="translate-container">
+            <label for="google_translate_element" class="translate-label">Translate</label>
+            <div id="google_translate_element"></div>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p>We value your privacy. This document explains how we collect and use your information.</p>
+        <div class="buttons">
+            <a href="index.html">Home</a>
+            <a href="upload.html">Sell Car</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="privacy-policy-grid">
+            <div class="privacy-policy-content">
+                <h2 class="section-title">Introduction</h2>
+                <p class="section-content">At TNET LLC, we are committed to protecting your privacy. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to safeguard your personal data.</p>
+
+                <h2 class="section-title">Information We Collect</h2>
+                <p class="section-content">We collect personal information such as your name, email address, phone number, and payment information when you register, interact with our website, or use our services.</p>
+
+                <h2 class="section-title">How We Use Your Information</h2>
+                <p class="section-content">The information we collect is used to process transactions, improve our services, communicate with you, and personalize your experience on our platform.</p>
+
+                <h2 class="section-title">Cookies and Tracking Technologies</h2>
+                <p class="section-content">We use cookies to enhance user experience, track usage patterns, and analyze trends. Cookies are small files stored on your device that help us improve our website's functionality.</p>
+
+                <h2 class="section-title">Data Security</h2>
+                <p class="section-content">We employ industry-standard security measures to protect your personal data. However, no method of transmission over the Internet is completely secure, and we cannot guarantee the absolute security of your information.</p>
+
+                <h2 class="section-title">Third-Party Services</h2>
+                <p class="section-content">We may share your information with trusted third parties who provide services on our behalf, such as payment processing or marketing. These third parties are obligated to protect your data and only use it as necessary to perform their services.</p>
+
+                <h2 class="section-title">Your Choices</h2>
+                <p class="section-content">You have the right to access, update, and delete your personal data at any time. You can opt-out of marketing communications by following the unsubscribe instructions in our emails.</p>
+
+                <h2 class="section-title">Changes to this Privacy Policy</h2>
+                <p class="section-content">We may update this Privacy Policy from time to time. Any changes will be posted on this page, and we encourage you to review it periodically.</p>
+
+                <a href="index.html" class="agree-btn">Agree</a>
+            </div>
+
+            <div class="privacy-policy-content">
+                <h2 class="section-title">Contact Information</h2>
+                <p class="section-content">If you have any questions or concerns regarding our Privacy Policy, please feel free to contact us:</p>
+
+                <div class="info-item">
+                    <h3>Customer Support</h3>
+                    <p><i>📞</i> Phone: (555) 123-4567</p>
+                    <p><i>✉️</i> Email: support@tnet.com</p>
+                    <p><i>🕒</i> Hours: Monday - Friday, 9am - 6pm</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Main Office</h3>
+                    <p><i>📍</i> 123 Tech Avenue, Suite 101, Tech City, TC 67890</p>
+                    <p><i>📞</i> Phone: (555) 987-6543</p>
+                    <p><i>✉️</i> Email: info@tnet.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 TNET LLC | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

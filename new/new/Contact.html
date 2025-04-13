@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Autosolo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #e60000;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #cc0000;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-form,
+        .contact-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form:hover,
+        .contact-info:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #e60000;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e60000;
+            padding-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .section-content {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .btn {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #cc0000;
+        }
+
+        .footer {
+            background-color: #e60000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            margin: 0 1rem;
+            background-color: #cc0000;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .buttons a:hover {
+            background-color: #e60000;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .buttons a:active {
+            transform: scale(0.98);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .translate-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .translate-label {
+            font-size: 16px;
+            color: white;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="translate-container">
+            <label for="google_translate_element" class="translate-label">Translate</label>
+            <div id="google_translate_element"></div>
+        </div>
+        <h1>Contact Autosolo</h1>
+        <p>We're here to help with all your car buying and selling needs</p>
+        <div class="buttons">
+            <a href="index.html">Home</a>
+            <a href="upload.html">Sell Car</a>
+            <a href="Privacy.html">Privacy Policy</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-content">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="buying">Car Buying</option>
+                            <option value="selling">Car Selling</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2 class="section-title">Contact Information</h2>
+                <p class="section-content">You can also reach out to us using the information below:</p>
+
+                <div class="info-item">
+                    <h3>Customer Service</h3>
+                    <p><i>📞</i> Phone: (555) 123-4567</p>
+                    <p><i>✉️</i> Email: support@autosolo.com</p>
+                    <p><i>🕒</i> Hours: Monday - Friday, 9am - 6pm</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Main Office</h3>
+                    <p><i>📍</i> 123 Car Street, Auto City, AC 12345</p>
+                    <p><i>📞</i> Phone: (555) 987-6543</p>
+                    <p><i>✉️</i> Email: info@autosolo.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for the latest updates and listings</p>
+                    <div style="margin-top: 0.5rem;">
+                        <span style="margin-right: 1rem; color: #e60000;">Facebook</span>
+                        <span style="margin-right: 1rem; color: #e60000;">Instagram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Autosolo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
